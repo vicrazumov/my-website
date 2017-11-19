@@ -36,7 +36,7 @@ class App extends React.Component {
 
   handleStop = () => {
     this.setState({ finished: true });
-    document.cookie = `${COOKIE_NAME}=1`;
+    document.cookie = `${COOKIE_NAME}=1;expires=31536000`;
   }
 
   render() {
