@@ -15,11 +15,11 @@ class App extends React.Component {
       started: false,
     }
 
-    this.text = `Hi! I'm Viktor and I’m a Javascript developer based in Moscow.\n
+    this.text = `Hi! I'm Viktor and I’m a Javascript developer based in Munich, Germany.\n
     I have experience in React-Redux, server-side rendering, SASS, socket.IO, express and SQL/NoSQL.\n
     Previously I used to work as a business analyst in oil&gas in Dubai.\n
     I speak 🇬🇧 🇷🇺 and a bit of 🇮🇹\n
-    In spare time I play drums, study blockchain and travel.\n
+    In spare time I play drums and travel.\n
     Btw it took you only 20 seconds to read this 🤓\n
     Let's get in touch!\n`;
   }
