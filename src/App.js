@@ -51,7 +51,7 @@ class App extends React.Component {
             <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/vrazumov/" className="fa fa-linkedin"></a>
             <a target="_blank" title="GitHub" href="https://github.com/vicrazumov" className="fa fa-github"></a>
             <a target="_blank" title="Facebook" href="https://www.facebook.com/vnrazumov" className="fa fa-facebook"></a>
-            <a target="_blank" title="Medium" href="https://medium.com/@vicrazumov" className="fa fa-medium"></a>
+            <a target="_blank" title="Twitter" href="https://twitter.com/vicrazumov" className="fa fa-twitter"></a>
             <a title="Replay the intro" href="#" onClick={() => this.setState({ finished: false })} className="fa fa-repeat"></a>
           </div>
         </div>
