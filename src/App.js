@@ -10,8 +10,10 @@ class App extends React.Component {
   constructor() {
     super();
 
+    const cookie = getCookie(COOKIE_NAME);
+
     this.state = {
-      finished: true,
+      finished: !!cookie,
       started: false,
     }
 
@@ -25,9 +27,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const cookie = getCookie(COOKIE_NAME);
     const newState = { started: true };
-    if (!cookie) newState.finished = false;
 
     requestAnimationFrame(() => {
       this.setState(newState);
