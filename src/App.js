@@ -15,7 +15,7 @@ class App extends React.Component {
     this.state = {
       finished: !!cookie,
       started: false,
-    }
+    };
 
     this.text = `Hi! I'm Viktor and I’m a Javascript developer based in Munich, Germany.\n
     I have experience in React-Redux, server-side rendering, SASS, socket.IO, express and SQL/NoSQL.\n
@@ -23,7 +23,7 @@ class App extends React.Component {
     I speak 🇬🇧 🇷🇺 and a bit of 🇮🇹\n
     In spare time I play drums and travel.\n
     Btw it took you only 20 seconds to read this 🤓\n
-    Let's get in touch!\n`;
+    Let's get in touch!`;
   }
 
   componentDidMount() {
@@ -36,9 +36,9 @@ class App extends React.Component {
 
   handleStop = () => {
     this.setState({ finished: true });
-    const CookieDate = new Date;
-    CookieDate.setFullYear(CookieDate.getFullYear() + 1);
-    document.cookie = `${COOKIE_NAME}=1;expires=${CookieDate.toGMTString()}`;
+    const cookieDate = new Date();
+    cookieDate.setFullYear(cookieDate.getFullYear() + 1);
+    document.cookie = `${COOKIE_NAME}=1;expires=${cookieDate.toGMTString()}`;
   }
 
   render() {
@@ -48,10 +48,10 @@ class App extends React.Component {
           <div className="title">Viktor Razumov</div>
           <div className="subtitle">Full-stack JS developer. Life enthusiast.</div>
           <div>
-            <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/vrazumov/" className="fa fa-linkedin"></a>
-            <a target="_blank" title="GitHub" href="https://github.com/vicrazumov" className="fa fa-github"></a>
-            <a target="_blank" title="Facebook" href="https://www.facebook.com/vnrazumov" className="fa fa-facebook"></a>
-            <a target="_blank" title="Twitter" href="https://twitter.com/vicrazumov" className="fa fa-twitter"></a>
+            <a target="_blank" rel="noopener noreferrer" title="LinkedIn" href="https://www.linkedin.com/in/vrazumov/" className="fa fa-linkedin"></a>
+            <a target="_blank" rel="noopener noreferrer" title="GitHub" href="https://github.com/vicrazumov" className="fa fa-github"></a>
+            <a target="_blank" rel="noopener noreferrer" title="Facebook" href="https://www.facebook.com/vnrazumov" className="fa fa-facebook"></a>
+            <a target="_blank" rel="noopener noreferrer" title="Twitter" href="https://twitter.com/vicrazumov" className="fa fa-twitter"></a>
             <a title="Replay the intro" href="#" onClick={() => this.setState({ finished: false })} className="fa fa-repeat"></a>
           </div>
         </div>

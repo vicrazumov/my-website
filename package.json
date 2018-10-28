@@ -5,7 +5,10 @@
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-scripts": "1.0.17",
-    "react-spritz": "0.2.3"
+    "react-spritz": "latest"
+  },
+  "devDependencies": {
+    "eslint-plugin-dependencies": "^2.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
